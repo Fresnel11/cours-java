@@ -55,9 +55,76 @@ public class Main {
     boolean n = k > j;
     System.out.println(k);
     System.out.println(n);
-    
+
+    String langue = "USA";
+    switch (langue) {
+      case "Fr":
+      System.out.println("France");
+      break;
+      case "US":
+      System.out.println("USA");
+      break;
+      default:
+      System.out.println("Bénin");
+      break;
+    }
+    boolean t = true;
+    String test = (t)? "valeur vraie" : "valeur fausse";
+    System.out.println(test);
+
+
+    // EXERCICE STRUCTURE DE CONTROLE
+    //  Exercice 1 : Vérification d'un nombre pair ou impair
+     int num = 40;
+     String text = (num % 2 == 0)? "Le nombre X est pair" : "Le nombre X est impair";
+     System.out.println(text);
+
+
+    // Exercice 2
+    int aa = 3;
+    int jj = 5;
+    int u = 9;
+    if (aa < jj && aa < u){
+      System.out.println("Le plus grand nombre est: " + u);
+    }else if (jj < u && jj < a){
+    System.out.println("Le plus grand nombre est: " + u);
+    }
+
+    //EXERCICE 3
+  int age = -12;
+    if (age >= 0 && age < 12 ){
+      System.out.println("Enfant");
+    }else if (age >= 13 && age <19){
+      System.out.println("Adolescent");
+    }else if (age >= 20 && age < 64){
+      System.out.println("Adulte");
+    }else if (age > 65 ) {
+      System.out.println("Sénior");
+    }else{
+      System.out.println("Cette personne n'existe pas");
+    }
+
+    int note = 5;
+    String tht = (note > 50)? "Reussir" : "Echoué";
+    System.out.println(tht);
+
+    int achat = 500;
+    if (achat < 100){
+      System.out.println("Pas de remise");
+    }else if(achat >= 100 && achat < 500){
+      int remise = achat - (achat * 10) /100;
+      System.out.println("Vous avez 10% de remise = " + remise );
+    }else if(achat >= 500){
+      int remise = achat - (achat * 20) /100;
+      System.out.println("Vous avez 20% de remise = " + remise);
+    }
+
 }
 
+
+
+
+  
     
 }
 
